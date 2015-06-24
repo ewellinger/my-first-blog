@@ -12,5 +12,13 @@
             <h3><a href="">My first post</a></h3>
             <p>This website was created using the <a href="http://tutorial.djangogirls.org/en/index.html">Django Girls Tutorial</a>!
         </div>
+
+        {% for post in posts %}
+            <div>
+                <p>Published: {{ post.published_date }}</p>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaks }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
