@@ -10,7 +10,7 @@
     <body>
         <header class="page-header">
             <a href="{% url "blog.views.post_new" %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <h1><center><a href="">Erich's Data Science Blog</a></center></h1>
+            <h1><center><a href="{% url "blog.views.post_list" %}">Erich's Data Science Blog</a></center></h1>
         </header>
 
         <div class="content container">
